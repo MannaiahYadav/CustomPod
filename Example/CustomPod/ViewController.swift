@@ -7,12 +7,16 @@
 //
 
 import UIKit
+import CustomPod
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var customImage: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        customImage.circleImageView(borderColor:UIColor.red, borderWidth:1)
+        
     }
 
     override func didReceiveMemoryWarning() {

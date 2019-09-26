@@ -20,8 +20,24 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PKt-Bb-rgZ">
+                                <rect key="frame" x="137.5" y="30" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="EW8-CF-gTW"/>
+                                    <constraint firstAttribute="height" constant="100" id="HPG-SG-FMM"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="PKt-Bb-rgZ" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="C11-FP-g1y"/>
+                            <constraint firstItem="PKt-Bb-rgZ" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="10" id="fnY-du-xMW"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="customImage" destination="PKt-Bb-rgZ" id="7Rq-uw-Orv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
